@@ -1,14 +1,15 @@
 context("TBModel behavior")
 
 solve_TB_model <- function(y0, parameters, times=seq(from=0,to=10,by=0.1), tol = 1e-8) {
-  lsoda(y0, times, TBfunc, parms=parameters, rtol=tol, atol=tol)
+  lsoda(y0, times, TBmodel, parms=parameters, rtol=tol, atol=tol)
 }
 
 nullList <- list(Beta = 0, Gmma = 0, Mu = 0, Delta = 0)
 
 paramCombos <- list(
   null = nullList,
-  only_transmission = modifyList(nullList, list(Beta=0.5))
+  only_transmission = modifyList(nullList, list(Beta=0.5)),
+  only_recovery = modifyList(nullList, list(Gmma=0.01))
 )
 
 test_that("population (N) is constant", {
