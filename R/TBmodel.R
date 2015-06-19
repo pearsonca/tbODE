@@ -1,5 +1,9 @@
-
-
+#' A function that matches the signature required for ode solvers in deSolve
+#'
+#' @param t see \code{\link[deSolve]{ode}}
+#' @param y see \code{\link[deSolve]{ode}}
+#' @param parameters see \code{\link[deSolve]{ode}}.
+#' @seealso \code{\link[deSolve]{ode}}.
 #' @export
 TBmodel <- function(t, y, parameters) with(c(as.list(y), parameters), {
   infection <- Beta*S*I/N
