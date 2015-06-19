@@ -1,10 +1,11 @@
 Package: tbODE
-Title: What the Package Does (one line, title case)
+Title: ODE Models for Tuberculosis
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph)
+Authors@R: person("Carl", "Pearson", , "blank101@gmail.com", role = c("aut", "cre"))
+Description: This package provides parametrized ODE models of tuberculosis,
+to be fit to data of population-level case reports.
 Depends: R (>= 3.1.1)
-License: What license is it under?
+License: MIT
 LazyData: true
 Suggests: testthat
 Imports: data.table, reshape2, ggplot2, deSolve
