@@ -4,7 +4,7 @@
 \alias{oderun}
 \title{Run a TB model function}
 \usage{
-oderun(func, parms = list(), y0 = c(S = 1000, I = 10, R = 10),
+oderun(func, parms = list(), y0 = c(S = 1000, I = 10, R = 10, N = 1020),
   times = 1:1000)
 }
 \arguments{
