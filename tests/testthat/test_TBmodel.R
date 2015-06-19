@@ -1,5 +1,4 @@
-library(drTB)
-require(deSolve)
+library(tbODE)
 
 context("TBModel behavior")
 

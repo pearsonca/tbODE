@@ -1,4 +1,4 @@
 library(testthat)
-library(drTB)
+library(tbODE)
 
-test_check("drTB")
+test_check("tbODE")
