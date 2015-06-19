@@ -1,4 +1,5 @@
 library(tbODE)
+require(deSolve)
 
 context("TBModel behavior")
 

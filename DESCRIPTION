@@ -3,8 +3,8 @@ Title: ODE Models for Tuberculosis
 Version: 0.0.0.9000
 Authors@R: person("Carl", "Pearson", , "blank101@gmail.com", role = c("aut", "cre"))
 Description:
- This package provides parametrized ODE models of tuberculosis,
- to be fit to data of population-level case reports.
+ A series of parametrized ODE models of tuberculosis,
+ to be fit to data of population-level case reports, and then subject to model comparison.  Data not provided.
 Depends: R (>= 3.1.1)
 License: MIT
 LazyData: true
